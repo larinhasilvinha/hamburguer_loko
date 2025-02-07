@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardápio - Hamburgueria Online</title>
+</head>
+<body>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #d32f2f;
+        padding: 20px;
+    }
+    
+    .logo {
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    nav ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+    }
+    
+    nav ul li {
+        margin-right: 15px;
+    }
+    
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+    
+    main {
+        padding: 20px;
+    }
+    
+    .menu-section {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 32px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    
+    .menu-category {
+        margin-bottom: 40px;
+    }
+    
+    .menu-category h2 {
+        font-size: 24px;
+        color: #d32f2f;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #d32f2f;
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+    
+    .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .product {
+        text-align: center;
+        background: #fff;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .product img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+    }
+    
+    .product p {
+        font-size: 18px;
+        margin: 10px 0 5px;
+        color: #333;
+    }
+    
+    .product span {
+        font-size: 16px;
+        color: #d32f2f;
+        font-weight: bold;
+    }
+    footer {
+        background: #222;
+        color: white;
+        padding: 10px;
+        text-align: center;
+}
+
+    
+    </style>
+
+<body>
+    <header>
+        <div class="logo">Hamburgueria Online</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="pedidos.html">Pedidos</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="menu-section">
+            <h1>Escolha seu pedido</h1>
+
+            <!-- Hambúrgueres Normais -->
+            <div class="menu-category">
+                <h2>Hambúrgueres Normais</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="hamburguer-classico.jpg" alt="Hambúrguer Clássico">
+                        <p>Hambúrguer Clássico</p>
+                        <span>R$ 15,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="cheeseburger.jpg" alt="Cheeseburger">
+                        <p>Cheeseburger</p>
+                        <span>R$ 18,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="hamburguer-duplo.jpg" alt="Hambúrguer Duplo">
+                        <p>Hambúrguer Duplo</p>
+                        <span>R$ 22,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="bacon-burger.jpg" alt="Bacon Burger">
+                        <p>Bacon Burger</p>
+                        <span>R$ 20,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hambúrgueres Vegetarianos -->
+            <div class="menu-category">
+                <h2>Hambúrgueres Vegetarianos</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="veggie-burger.jpg" alt="Veggie Burger">
+                        <p>Veggie Burger</p>
+                        <span>R$ 17,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="cheddar-veggie.jpg" alt="Cheddar Veggie">
+                        <p>Cheddar Veggie</p>
+                        <span>R$ 19,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="tofu-burger.jpg" alt="Grilled Tofu Burger">
+                        <p>Grilled Tofu Burger</p>
+                        <span>R$ 18,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="mushroom-delight.jpg" alt="Mushroom Delight">
+                        <p>Mushroom Delight</p>
+                        <span>R$ 20,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Milkshakes -->
+            <div class="menu-category">
+                <h2>Milkshakes</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="milkshake-morango.jpg" alt="Milkshake de Morango">
+                        <p>Milkshake de Morango</p>
+                        <span>R$ 10,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="milkshake-chocolate.jpg" alt="Milkshake de Chocolate">
+                        <p>Milkshake de Chocolate</p>
+                        <span>R$ 12,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="milkshake-baunilha.jpg" alt="Milkshake de Baunilha">
+                        <p>Milkshake de Baunilha</p>
+                        <span>R$ 10,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="milkshake-caramelo.jpg" alt="Milkshake de Caramelo">
+                        <p>Milkshake de Caramelo</p>
+                        <span>R$ 12,00</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sobremesas -->
+            <div class="menu-category">
+                <h2>Sobremesas</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="sorvete-chocolate.jpg" alt="Sorvete de Chocolate">
+                        <p>Sorvete de Chocolate</p>
+                        <span>R$ 8,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="sorvete-morango.jpg" alt="Sorvete de Morango">
+                        <p>Sorvete de Morango</p>
+                        <span>R$ 8,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="brownie-sorvete.jpg" alt="Brownie com Sorvete">
+                        <p>Brownie com Sorvete</p>
+                        <span>R$ 15,00</span>
+                    </div>
+                    <div class="product">
+                        <img src="torta-maca.jpg" alt="Torta de Maçã">
+                        <p>Torta de Maçã</p>
+                        <span>R$ 12,00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hamburgueria Online. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
