@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Cadastro</title>
+</head>
+<body>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #d32f2f;
+            color: white;
+            text-align: center;
+            padding: 1.5rem 0;
+        }
+        header h1 {
+            margin: 5;
+            font-size: 2rem;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 80vh;
+            padding: 1rem;
+        }
+        form {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: #333;
+        }
+        form input {
+            width: 100%;
+            padding: 0.8rem;
+            margin-bottom: 1.5rem;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+        form button {
+            width: 100%;
+            padding: 0.8rem;
+            background-color: #d32f2f;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        form button:hover {
+            background-color: #e55d00;
+        }
+        
+        .back-link {
+            display: block;
+            text-align: center;
+            margin-top: 1rem;
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        footer {
+        background: #222;
+        color: white;
+        padding: 5px;
+        text-align: center;
+}
+    </style>
+    <header>
+        <h1>Cadastre-se</h1>
+    </header>
+    <main>
+        <form id="cadastroForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            
+            <button type="submit">Cadastrar</button>
+            <a href="login.html" class="back-link">Já tem uma conta? Faça login</a>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Hamburgueria Online. Todos os direitos reservados.</p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
